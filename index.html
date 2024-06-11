@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="formSection">
+            <h2>Patient Information Form</h2>
+            <form id="patientForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="diseases">Chronic Diseases:</label>
+                <select id="diseases" name="diseases" multiple required>
+                    <option value="heart disease">Heart Disease</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="asthma">Asthma</option>
+                    <option value="cancer">Cancer</option>
+                    <option value="none">None</option>
+                </select><br>
+
+                <label for="imageUrl">Image URL:</label>
+                <input type="text" id="imageUrl" name="imageUrl" required><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="patientsSection">
+            <h2>Patient Cards</h2>
+            <div id="patientsContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HealthCare. All rights reserved.</p>
+    </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
