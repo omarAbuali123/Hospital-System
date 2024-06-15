@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-     <header>
+    <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -23,12 +23,19 @@
             <form id="patientForm">
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" required><br>
+                <span id="fullNameError" class="error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <span id="emailError" class="error"></span>
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required><br>
+                <span id="passwordError" class="error"></span>
 
                 <label for="dob">Date of Birth:</label>
                 <input type="date" id="dob" name="dob" required><br>
+                <span id="dobError" class="error"></span>
 
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
@@ -39,6 +46,7 @@
 
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" required><br>
+                <span id="phoneError" class="error"></span>
 
                 <label for="diseases">Chronic Diseases:</label>
                 <select id="diseases" name="diseases" multiple required>
@@ -51,6 +59,7 @@
 
                 <label for="imageUrl">Image URL:</label>
                 <input type="text" id="imageUrl" name="imageUrl" required><br>
+                <span id="imageUrlError" class="error"></span>
 
                 <button type="submit">Submit</button>
             </form>
@@ -64,6 +73,6 @@
         <p>&copy; 2024 HealthCare. All rights reserved.</p>
     </footer>
 
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
